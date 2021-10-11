@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    font-size: 18px; 
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f6f7fb;
+}
+
+.top-bar{
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: white;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.login-header{
+    padding: 15px 50px;
+}
+
+.top-bar .top-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar .logo-section{
+    display: flex;
+    align-items: center;
+}
+
+.top-bar ul{
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar ul li {
+    width: 80px;
+    margin:  0px 15px;
+}
+
+.top-bar ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item{
+    color: #20b883;
+}
+
+.nav-item:before{
+    position: absolute;
+    content: '';
+    z-index: 100;
+    height: 5px;
+    width: 80px;
+    bottom: -20px;
+    border-radius: 4px;
+    background-color: #20b883;
+}
+
+
+
+.logo-section p{
+    margin: 0;
+    font-size: 24px;
+    padding-left: 10px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    color: rgba(0,0,0,.8);
+}
+
+.login-box {
+    background-color: white;
+    padding: 35px;
+    min-width: 500px;
+    box-shadow: 0 0 6px #ccc;
+    width: 35%;
+    margin: 40px auto;
+    margin-top: 100px;
+    border-radius: 6px;
+}
+
+.login-box form h1{
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box form button{
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-box form input{
+    width: 100%;
+    padding-top: 16px;
+    font-size: .9rem;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+/* iske nuche */
+
+.main-section{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+table{
+    font-size: .8rem;
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+table td{
+    padding: 12px 24px;
+    text-align: left;
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+}
+
+table th{
+    padding: 12px 24px;
+    text-align: left;
+}
+
+.divider{
+    height: 10px;
+    width: 100%;
+}
+
+.table-row{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: aquamarine;
+}
+
+.list-section{
+    display: flex;
+}
+
+.list-section .list-filter{
+   width: 20%;
+}
+
+.list-section .list-table{
+   width: 80%;
+}
+
+.table-row .diff-color{
+    color: #8c8c8c;
+}
+
+.serach-section input{
+    width: calc(100% - 100px);
+    padding: 12px 24px;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin: 0 36px 0 0;
+    outline: none;
+}
+
+.serach-section form{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.serach-section button{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#order-table-body{
+    width: 100%;
+}
+
+.diff-width{
+    width: 100px;
+}

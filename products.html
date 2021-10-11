@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <title>Products List</title>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-section">
+            <div class="logo-section">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="">
+                <p>Kafene</p>
+            </div>
+            <ul>
+                <li><a href="orders.html">Orders</a></li>
+                <li class='nav-item'>Products</li>
+                <li><a href="./users.html">Users</a></li>
+            </ul>
+        </div>
+        <p class="logout-text">Logout</p>
+    </header>
+    <main class="main-section" >
+      <h1>Products</h1>
+      <section class="list-section">
+        <div class="list-filter">
+            <h3>Filter</h3>
+            <p>Count : <span id="product-count"></span></p>
+            <div>
+                <input class="product-checkbox" checked type="checkbox" name="" id="expire"> 
+                <label for="expire">Expired</label>
+            </div>
+            <div>
+                <input class="product-checkbox" checked type="checkbox" name="" id="stock">
+                <label for="stock">Low Stock</label>
+            </div>
+        </div>
+        <div class="list-table">
+            <table>
+               <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Product Brand</th>
+                    <th>Expiry Date</th>
+                    <th>Unit Price</th>
+                    <th>Stock</th>
+               </tr>
+               <tbody id="product-table-body">
+               </tbody>
+            </table>
+        </div>
+      </section>
+    </main>
+
+</body>
+</html>
